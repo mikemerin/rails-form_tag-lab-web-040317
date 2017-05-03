@@ -1,5 +1,9 @@
+<h1>All Students</h1>
+
 <div>
   <% @students.each do |student| %>
     <div><%= link_to student.to_s, student_path(student) %></div>
   <% end %>
 </div>
+<br>
+<%= link_to "Create a New Student", new_student_path %>
